@@ -15,8 +15,8 @@ def formulario():
 #    return render_template('pagina1.html')
 
 #Envio de datos a través de JSON
-@servidorWeb.route('/modelo',methods=['POST'])
-def modeloPrediccion():
+@servidorWeb.route('/modeloForm',methods=['POST'])
+def modeloForm():
     contenido = request.json
     print(contenido)
     datosEntrada = np.array([
